@@ -16,57 +16,143 @@ a {
     text-decoration: none;
 }
 
-img{
+img {
     object-fit: cover;
 }
 
-.container {
-    width: 123.4rem;
-    max-width: calc(100% - 20.6rem);
-    margin-left: auto;
-    margin-right: auto;
+.main-header {
+    margin-left: 6%;
+    margin-right: 6%;
 }
 
 /* Css Header */
 .header {
+    height: 10000px;
     background-image: url('../img/bg-top-1.jpg');
     color: white;
+    position: relative;
 }
-.header .container{
-    display: flex;
+
+.header .main-header {
     padding-top: 8rem;
 }
-.header .logo{
-    display: inline-block;    
+
+.header-nav .logo {
+    display: inline-block;
     text-align: center;
-    margin-right: 42rem;
+    margin-right: 38rem;
 }
-.header img{
+
+.header-nav img {
     width: 25.7rem;
 }
-.header .logo h4{
+
+.header-nav .logo h4 {
     color: #FFFAFA;
-    font-family: "Gilroy-regular", sans-serif;
     font-size: 1.6rem;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 300;
     line-height: normal;
 }
-.header .nav{
+
+.header .header-nav {
+    display: flex;
+}
+
+.header-nav .nav {
     display: inline-block;
     height: 3.7rem;
 }
-.header .nav ul{
+
+.header-nav .nav ul {
     display: flex;
 }
-.header .nav li:not(:first-child){
-    margin-left: 2.9rem;
+
+.header-nav .nav li:not(:first-child) {
+    margin-left: 1.3rem;
 }
-.header .nav a{
+
+.header-nav .nav a {
     color: #FFFCFC;
     font-size: 1.8rem;
     font-style: normal;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.header-icon {
+    margin-top: 4rem;
+    margin-left: 30%;
+}
+
+.header-content {
+    display: flex;
+}
+
+.header-content .icon-cheo {
+    position: absolute;
+    left: 0;
+}
+
+.header-content .icon-vuong {
+    position: absolute;
+    left: 20%;
+    top: 7%;
+}
+
+.header-content .slogan {
+    display: flex;
+    float: right;
+    margin-top: 2.5rem;
+    margin-left: 40%;
+}
+
+.header-content .slogan .h1 {
+    color: #FFF;
+    font-size: 28.8rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.header-content .slogan .h4 {
+    margin-top: 10%;
+}
+
+.header-content .slogan h4._1 {
+    color: #FFF;
+    font-size: 8rem;
+    font-style: normal;
     font-weight: 400;
     line-height: normal;
-    text-transform: uppercase;
+}
+
+.header-content .slogan h4._2 {
+    color: #FFF;
+    font-size: 12rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.header-contact {
+    float: right;
+}
+
+.header-contact .btn-follow {
+    background: #FFF;
+    border: none;
+    border-radius: 0.2rem;
+    width: 19.5rem;
+    height: 4rem;
+    color: #037EE3;
+    text-align: center;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.header-contact .icon-contact{
+    margin-top: 8%;
+    margin-left: 12%;
 }
