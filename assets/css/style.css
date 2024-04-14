@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Roboto", sans-serif;
+}
+
+/* Css Dung Chung */
+a {
+    text-decoration: none;
+}
+
+img{
+    object-fit: cover;
+}
+
+.container {
+    width: 123.4rem;
+    max-width: calc(100% - 20.6rem);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Css Header */
+.header {
+    background-image: url('../img/bg-top-1.jpg');
+    color: white;
+}
+.header .container{
+    display: flex;
+    padding-top: 8rem;
+}
+.header .logo{
+    display: inline-block;    
+    text-align: center;
+    margin-right: 42rem;
+}
+.header img{
+    width: 25.7rem;
+}
+.header .logo h4{
+    color: #FFFAFA;
+    font-family: "Gilroy-regular", sans-serif;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.header .nav{
+    display: inline-block;
+    height: 3.7rem;
+}
+.header .nav ul{
+    display: flex;
+}
+.header .nav li:not(:first-child){
+    margin-left: 2.9rem;
+}
+.header .nav a{
+    color: #FFFCFC;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
