@@ -21,16 +21,19 @@ img {
 }
 
 .main-header {
-    margin-left: 6%;
-    margin-right: 6%;
+	width: 114rem;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 /* Css Header */
 .header {
-    height: 10000px;
+    height: 1000px;
     background-image: url('../img/bg-top-1.jpg');
     color: white;
-    position: relative;
+	background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
 }
 
 .header .main-header {
@@ -97,7 +100,7 @@ img {
 .header-content .icon-vuong {
     position: absolute;
     left: 20%;
-    top: 7%;
+    top: 70%;
 }
 
 .header-content .slogan {
