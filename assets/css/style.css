@@ -1,161 +1,81 @@
-* {
-    box-sizing: border-box;
-}
-
-html {
-    font-size: 62.5%;
-}
-
-body {
-    font-size: 1.6rem;
-    font-family: "Roboto", sans-serif;
-}
-
-/* Css Dung Chung */
-a {
-    text-decoration: none;
-}
-
+/* css dùng chung */
 img {
     object-fit: cover;
 }
 
-.main-header {
-	width: 114rem;
-	margin-right: auto;
-	margin-left: auto;
-}
+/* end */
 
-/* Css Header */
-.header {
-    height: 1000px;
+header {
     background-image: url('../img/bg-top-1.jpg');
-    color: white;
-	background-size: cover;
+    background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
 }
 
-.header .main-header {
-    padding-top: 8rem;
-}
-
-.header-nav .logo {
-    display: inline-block;
-    text-align: center;
-    margin-right: 38rem;
-}
-
-.header-nav img {
-    width: 25.7rem;
-}
-
-.header-nav .logo h4 {
-    color: #FFFAFA;
-    font-size: 1.6rem;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-}
-
-.header .header-nav {
-    display: flex;
-}
-
-.header-nav .nav {
-    display: inline-block;
-    height: 3.7rem;
-}
-
-.header-nav .nav ul {
-    display: flex;
-}
-
-.header-nav .nav li:not(:first-child) {
-    margin-left: 1.3rem;
-}
-
-.header-nav .nav a {
-    color: #FFFCFC;
-    font-size: 1.8rem;
-    font-style: normal;
-    font-weight: 300;
+.header .nav a {
+    color: #FFF;
     text-transform: uppercase;
 }
 
-.header-icon {
-    margin-top: 4rem;
-    margin-left: 30%;
+.header .icon img {
+    width: 198px;
+    margin-left: 35%;
 }
-
-.header-content {
+.header .header_slogan{
+    position: relative;
+}
+.header .header_slogan .text {
     display: flex;
 }
 
-.header-content .icon-cheo {
-    position: absolute;
-    left: 0;
-}
-
-.header-content .icon-vuong {
-    position: absolute;
-    left: 20%;
-    top: 70%;
-}
-
-.header-content .slogan {
-    display: flex;
-    float: right;
-    margin-top: 2.5rem;
-    margin-left: 40%;
-}
-
-.header-content .slogan .h1 {
+.header .header_slogan .h1 h1 {
     color: #FFF;
-    font-size: 28.8rem;
+    font-size: 288px;
     font-style: normal;
     font-weight: 900;
     line-height: normal;
 }
 
-.header-content .slogan .h4 {
-    margin-top: 10%;
+.header .header_slogan .h4 {
+    padding-top: 20%;
 }
 
-.header-content .slogan h4._1 {
+.header .header_slogan .h4 h4 {
     color: #FFF;
-    font-size: 8rem;
+    font-size: 63px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
 
-.header-content .slogan h4._2 {
+.header .header_slogan .h4 h4:not(:first-child) {
     color: #FFF;
-    font-size: 12rem;
+    font-size: 103px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
 }
 
-.header-contact {
+.header .btn-action .btn-follow {
+    position: absolute;
+    bottom: 25%;
+    left: 76%;
     float: right;
-}
-
-.header-contact .btn-follow {
-    background: #FFF;
     border: none;
-    border-radius: 0.2rem;
-    width: 19.5rem;
-    height: 4rem;
     color: #037EE3;
     text-align: center;
-    font-size: 1.6rem;
+    font-size: 16px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
     line-height: normal;
+    margin-right: 10%;
+    border-radius: 2px;
+    background: #FFF;
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.20);
+    width: 150.983px;
+    height: 40.16px;
 }
-.header-contact .icon-contact{
-    margin-top: 8%;
-    margin-left: 12%;
+.header .btn-action img{
+    position: absolute;
+    bottom: 10%;
+    left: 76%;
 }
