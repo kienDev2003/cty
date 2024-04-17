@@ -10,7 +10,7 @@ body {
     font-size: 1.6rem;
     font-family: 'SVN-Gilroy', sans-serif;
     font-weight: 300;
-    background-color: #0578BD;
+    /* background-color: #0578BD; */
     background-repeat: no-repeat;
 }
 
@@ -21,12 +21,25 @@ body {
     margin: auto;
 }
 
+.main-body {
+    max-width: 1140px;
+    width: 100%;
+    margin: auto;
+}
+
 a {
     text-decoration: none;
 }
 
 /* css header */
-.header .body {
+.header {
+    background-image: url('../img/bg-top-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 2457px;
+}
+
+.header .header-nav {
     padding-top: 70px;
     max-width: 1140px;
     width: 100%;
@@ -55,61 +68,63 @@ a {
     padding: 8px 25.5px;
 }
 
-/* css main */
-/* __slogan */
-.main .slogan .main-content .icon-tech {
+.header .slogan .icon-tech {
     margin-top: 57px;
     margin-left: 32%;
 }
 
-.main .slogan .body {
+.header .slogan .body {
     display: flex;
     margin-left: auto;
 }
 
-.main .slogan .icon-block {
+.header .slogan .icon-block {
     display: flex;
 }
 
-.main .slogan .text-block {
+.header .slogan .text-block {
     text-align: center;
     justify-content: center;
     align-items: center;
     flex-basis: 80%;
 }
 
-.main .slogan .text-block .text-slogan {
+.header .slogan .text-block .text-slogan {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.main .slogan .text-block .left p {
+.header .slogan .text-block .left p {
     color: #FFF;
     font-size: 28.8rem;
     font-weight: 700;
 }
 
-.main .slogan .text-block .right p {
+.header .slogan .text-block .right p {
     margin-top: 11px;
     color: #FFF;
     font-size: 9.6rem;
 }
 
-.main .slogan .text-block .right p:not(:first-child) {
+.header .slogan .text-block .right p:not(:first-child) {
     color: #FFF;
     font-size: 16rem;
     font-weight: 700;
 }
 
-/* __action-contact */
-.main .action-contact {
-    float: right;
-    margin-right: 15%;
-    display: block;
+.header .action-contact .main-body {
+    height: 200px;
+    position: relative;
 }
 
-.main .action-contact button {
+.header .action-contact .btn-action {
+    position: absolute;
+    right: 0;
+    top: 20px;
+}
+
+.header .action-contact button {
     color: #037EE3;
     border: none;
     margin-bottom: 20px;
@@ -122,19 +137,20 @@ a {
     box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.20);
 }
 
-.main .action-contact img {
+.header .action-contact img {
     margin-left: 13%;
 }
-
-/* __intro */
-.main .intro .icon {
+.main .intro .icon{
+    height: 966px;
+}
+.main .intro .body {
     position: relative;
 }
 
-.main .intro .body {
-    position: absolute;
-    top: 75%;
+.main .intro .body .content-block {
     display: flex;
+    position: absolute;
+    top: 40%;
 }
 
 .main .intro .text-block {
@@ -143,15 +159,30 @@ a {
 }
 
 .main .intro .text-block .read {
+    margin-top: 10px;
+    border-radius: 2px;
+    background: linear-gradient(90deg, #0061B0 0.05%, #016DC6 47.39%, #048BFA 99.93%), #0061B0;
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.20);
     width: 195.983px;
     height: 49.16px;
-    border-radius: 2px;
-    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.20);
-    border: none;
+    flex-shrink: 0;
+    color: #FFF;
     font-size: 1.6rem;
+    font-weight: 300;
+    border: none;
 }
-
-.main .intro .media-block img {
-    margin-top: 20px;
-    float: right;
+/* css main */
+.main .main-body{
+    padding-top: 140px;
+}
+.main .what-we-do{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.main .what-we-do img:not(:first-child){
+    position: absolute;
+    top: -50%;
+    left: 35%;
 }
